@@ -1,0 +1,30 @@
+.tip span {
+    position: absolute;
+    width: 10em;
+    background-color: #222222;
+    border-radius: 0.5em;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -5em;
+    padding: 0.3em;
+    font-weight: normal;
+    color: #ffffff;
+    display: none
+}
+
+.tip span::after { /* Arrow */
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tip:hover span { display: block }
+
+.tip b {
+    color: #e8ad00;
+}
