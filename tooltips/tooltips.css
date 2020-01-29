@@ -1,11 +1,11 @@
 .tip span {
     position: absolute;
-    width: 10em;
+    width: 5em;
     background-color: #222222;
     border-radius: 0.5em;
     bottom: 125%;
     left: 50%;
-    margin-left: -5em;
+    margin-left: -2.5em;
     padding: 0.3em;
     font-weight: normal;
     color: #ffffff;
@@ -14,14 +14,8 @@
     visibility: hidden;
 }
 
-.tip span::before { 
-    content: "Last month:";
-    color: #e8ad00;
-    font-weight: bold;
-    font-size: large
-}
-
-.tip span::after { /* Arrow */
+.tip span::after {
+    /* Arrow */
     content: "";
     position: absolute;
     top: 100%;
@@ -32,9 +26,11 @@
     border-color: #555 transparent transparent transparent;
 }
 
-.tip:hover { cursor: pointer }
+.tip:hover {
+    cursor: pointer
+}
 
-.tip:hover span { 
+.tip:hover span {
     visibility: visible;
     opacity: 1
 }

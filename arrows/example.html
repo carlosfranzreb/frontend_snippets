@@ -1,0 +1,28 @@
+<script src="arrows.js"></script>
+
+<canvas id="first" style="left: 2em;"></canvas>
+<canvas id="second" style="left: 14em;"></canvas>
+<canvas id="third" style="left: 26em;"></canvas>
+
+<style>
+canvas {
+    position: absolute;
+    right: 10em;
+    width: 10em;
+    height: 10em;
+}
+</style>
+<script>
+window.onload = function() {
+    down_arrow(document.getElementById('first'), 90);
+    right_arrow(document.getElementById('second'), 45);
+    arrow(
+        document.getElementById('third'),
+        250,
+        80,
+        10,
+        50,
+        10
+    );
+}
+</script>
